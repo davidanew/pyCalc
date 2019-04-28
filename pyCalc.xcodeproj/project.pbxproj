@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C856812622760A7E00FEA8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856812522760A7E00FEA8E3 /* AppDelegate.swift */; };
+		C856812822760A7E00FEA8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856812722760A7E00FEA8E3 /* ViewController.swift */; };
+		C856812B22760A7E00FEA8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C856812922760A7E00FEA8E3 /* Main.storyboard */; };
+		C856812D22760A8200FEA8E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C856812C22760A8200FEA8E3 /* Assets.xcassets */; };
+		C856813022760A8200FEA8E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C856812E22760A8200FEA8E3 /* LaunchScreen.storyboard */; };
+		C856813B22760A8200FEA8E3 /* pyCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856813A22760A8200FEA8E3 /* pyCalcTests.swift */; };
+		C856814622760A8200FEA8E3 /* pyCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856814522760A8200FEA8E3 /* pyCalcUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C856813722760A8200FEA8E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C856811A22760A7E00FEA8E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C856812122760A7E00FEA8E3;
+			remoteInfo = pyCalc;
+		};
+		C856814222760A8200FEA8E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C856811A22760A7E00FEA8E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C856812122760A7E00FEA8E3;
+			remoteInfo = pyCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C856812222760A7E00FEA8E3 /* pyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C856812522760A7E00FEA8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C856812722760A7E00FEA8E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C856812A22760A7E00FEA8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C856812C22760A8200FEA8E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C856812F22760A8200FEA8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C856813122760A8200FEA8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C856813622760A8200FEA8E3 /* pyCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pyCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C856813A22760A8200FEA8E3 /* pyCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pyCalcTests.swift; sourceTree = "<group>"; };
+		C856813C22760A8200FEA8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C856814122760A8200FEA8E3 /* pyCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pyCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C856814522760A8200FEA8E3 /* pyCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pyCalcUITests.swift; sourceTree = "<group>"; };
+		C856814722760A8200FEA8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C856811F22760A7E00FEA8E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C856813322760A8200FEA8E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C856813E22760A8200FEA8E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C856811922760A7E00FEA8E3 = {
+			isa = PBXGroup;
+			children = (
+				C856812422760A7E00FEA8E3 /* pyCalc */,
+				C856813922760A8200FEA8E3 /* pyCalcTests */,
+				C856814422760A8200FEA8E3 /* pyCalcUITests */,
+				C856812322760A7E00FEA8E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C856812322760A7E00FEA8E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C856812222760A7E00FEA8E3 /* pyCalc.app */,
+				C856813622760A8200FEA8E3 /* pyCalcTests.xctest */,
+				C856814122760A8200FEA8E3 /* pyCalcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C856812422760A7E00FEA8E3 /* pyCalc */ = {
+			isa = PBXGroup;
+			children = (
+				C856812522760A7E00FEA8E3 /* AppDelegate.swift */,
+				C856812722760A7E00FEA8E3 /* ViewController.swift */,
+				C856812922760A7E00FEA8E3 /* Main.storyboard */,
+				C856812C22760A8200FEA8E3 /* Assets.xcassets */,
+				C856812E22760A8200FEA8E3 /* LaunchScreen.storyboard */,
+				C856813122760A8200FEA8E3 /* Info.plist */,
+			);
+			path = pyCalc;
+			sourceTree = "<group>";
+		};
+		C856813922760A8200FEA8E3 /* pyCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				C856813A22760A8200FEA8E3 /* pyCalcTests.swift */,
+				C856813C22760A8200FEA8E3 /* Info.plist */,
+			);
+			path = pyCalcTests;
+			sourceTree = "<group>";
+		};
+		C856814422760A8200FEA8E3 /* pyCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C856814522760A8200FEA8E3 /* pyCalcUITests.swift */,
+				C856814722760A8200FEA8E3 /* Info.plist */,
+			);
+			path = pyCalcUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C856812122760A7E00FEA8E3 /* pyCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C856814A22760A8200FEA8E3 /* Build configuration list for PBXNativeTarget "pyCalc" */;
+			buildPhases = (
+				C856811E22760A7E00FEA8E3 /* Sources */,
+				C856811F22760A7E00FEA8E3 /* Frameworks */,
+				C856812022760A7E00FEA8E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pyCalc;
+			productName = pyCalc;
+			productReference = C856812222760A7E00FEA8E3 /* pyCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C856813522760A8200FEA8E3 /* pyCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C856814D22760A8200FEA8E3 /* Build configuration list for PBXNativeTarget "pyCalcTests" */;
+			buildPhases = (
+				C856813222760A8200FEA8E3 /* Sources */,
+				C856813322760A8200FEA8E3 /* Frameworks */,
+				C856813422760A8200FEA8E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C856813822760A8200FEA8E3 /* PBXTargetDependency */,
+			);
+			name = pyCalcTests;
+			productName = pyCalcTests;
+			productReference = C856813622760A8200FEA8E3 /* pyCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C856814022760A8200FEA8E3 /* pyCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C856815022760A8200FEA8E3 /* Build configuration list for PBXNativeTarget "pyCalcUITests" */;
+			buildPhases = (
+				C856813D22760A8200FEA8E3 /* Sources */,
+				C856813E22760A8200FEA8E3 /* Frameworks */,
+				C856813F22760A8200FEA8E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C856814322760A8200FEA8E3 /* PBXTargetDependency */,
+			);
+			name = pyCalcUITests;
+			productName = pyCalcUITests;
+			productReference = C856814122760A8200FEA8E3 /* pyCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C856811A22760A7E00FEA8E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "David New";
+				TargetAttributes = {
+					C856812122760A7E00FEA8E3 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C856813522760A8200FEA8E3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C856812122760A7E00FEA8E3;
+					};
+					C856814022760A8200FEA8E3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C856812122760A7E00FEA8E3;
+					};
+				};
+			};
+			buildConfigurationList = C856811D22760A7E00FEA8E3 /* Build configuration list for PBXProject "pyCalc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C856811922760A7E00FEA8E3;
+			productRefGroup = C856812322760A7E00FEA8E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C856812122760A7E00FEA8E3 /* pyCalc */,
+				C856813522760A8200FEA8E3 /* pyCalcTests */,
+				C856814022760A8200FEA8E3 /* pyCalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C856812022760A7E00FEA8E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C856813022760A8200FEA8E3 /* LaunchScreen.storyboard in Resources */,
+				C856812D22760A8200FEA8E3 /* Assets.xcassets in Resources */,
+				C856812B22760A7E00FEA8E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C856813422760A8200FEA8E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C856813F22760A8200FEA8E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C856811E22760A7E00FEA8E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C856812822760A7E00FEA8E3 /* ViewController.swift in Sources */,
+				C856812622760A7E00FEA8E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C856813222760A8200FEA8E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C856813B22760A8200FEA8E3 /* pyCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C856813D22760A8200FEA8E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C856814622760A8200FEA8E3 /* pyCalcUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C856813822760A8200FEA8E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C856812122760A7E00FEA8E3 /* pyCalc */;
+			targetProxy = C856813722760A8200FEA8E3 /* PBXContainerItemProxy */;
+		};
+		C856814322760A8200FEA8E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C856812122760A7E00FEA8E3 /* pyCalc */;
+			targetProxy = C856814222760A8200FEA8E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C856812922760A7E00FEA8E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C856812A22760A7E00FEA8E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C856812E22760A8200FEA8E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C856812F22760A8200FEA8E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C856814822760A8200FEA8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C856814922760A8200FEA8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C856814B22760A8200FEA8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64F6S6MS6N;
+				INFOPLIST_FILE = pyCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidanew.pyCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C856814C22760A8200FEA8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64F6S6MS6N;
+				INFOPLIST_FILE = pyCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidanew.pyCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C856814E22760A8200FEA8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64F6S6MS6N;
+				INFOPLIST_FILE = pyCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidanew.pyCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pyCalc.app/pyCalc";
+			};
+			name = Debug;
+		};
+		C856814F22760A8200FEA8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64F6S6MS6N;
+				INFOPLIST_FILE = pyCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidanew.pyCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pyCalc.app/pyCalc";
+			};
+			name = Release;
+		};
+		C856815122760A8200FEA8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64F6S6MS6N;
+				INFOPLIST_FILE = pyCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidanew.pyCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pyCalc;
+			};
+			name = Debug;
+		};
+		C856815222760A8200FEA8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64F6S6MS6N;
+				INFOPLIST_FILE = pyCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidanew.pyCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pyCalc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C856811D22760A7E00FEA8E3 /* Build configuration list for PBXProject "pyCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C856814822760A8200FEA8E3 /* Debug */,
+				C856814922760A8200FEA8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C856814A22760A8200FEA8E3 /* Build configuration list for PBXNativeTarget "pyCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C856814B22760A8200FEA8E3 /* Debug */,
+				C856814C22760A8200FEA8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C856814D22760A8200FEA8E3 /* Build configuration list for PBXNativeTarget "pyCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C856814E22760A8200FEA8E3 /* Debug */,
+				C856814F22760A8200FEA8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C856815022760A8200FEA8E3 /* Build configuration list for PBXNativeTarget "pyCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C856815122760A8200FEA8E3 /* Debug */,
+				C856815222760A8200FEA8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C856811A22760A7E00FEA8E3 /* Project object */;
+}
