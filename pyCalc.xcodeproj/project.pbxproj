@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A99EC29413DDB3E62FA7078 /* Pods_pyCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9301FCBFCE10F2C0ADDAEB /* Pods_pyCalc.framework */; };
 		C856812622760A7E00FEA8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856812522760A7E00FEA8E3 /* AppDelegate.swift */; };
 		C856812822760A7E00FEA8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856812722760A7E00FEA8E3 /* ViewController.swift */; };
 		C856812B22760A7E00FEA8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C856812922760A7E00FEA8E3 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		C856813022760A8200FEA8E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C856812E22760A8200FEA8E3 /* LaunchScreen.storyboard */; };
 		C856813B22760A8200FEA8E3 /* pyCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856813A22760A8200FEA8E3 /* pyCalcTests.swift */; };
 		C856814622760A8200FEA8E3 /* pyCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856814522760A8200FEA8E3 /* pyCalcUITests.swift */; };
+		C8C0E72F22773C3A00098418 /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C8C0E72E22773C3A00098418 /* Notes.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AC0767C1FA87056A0FE0371 /* Pods-pyCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pyCalc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pyCalc/Pods-pyCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		8EBF9EF6A4D39031A4AB82B5 /* Pods-pyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pyCalc.release.xcconfig"; path = "Pods/Target Support Files/Pods-pyCalc/Pods-pyCalc.release.xcconfig"; sourceTree = "<group>"; };
 		C856812222760A7E00FEA8E3 /* pyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C856812522760A7E00FEA8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C856812722760A7E00FEA8E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		C856814122760A8200FEA8E3 /* pyCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pyCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C856814522760A8200FEA8E3 /* pyCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pyCalcUITests.swift; sourceTree = "<group>"; };
 		C856814722760A8200FEA8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8C0E72E22773C3A00098418 /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
+		DF9301FCBFCE10F2C0ADDAEB /* Pods_pyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A99EC29413DDB3E62FA7078 /* Pods_pyCalc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		207D39F7069688F446A18240 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF9301FCBFCE10F2C0ADDAEB /* Pods_pyCalc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		271E7813FCBC49CC32FE5D54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AC0767C1FA87056A0FE0371 /* Pods-pyCalc.debug.xcconfig */,
+				8EBF9EF6A4D39031A4AB82B5 /* Pods-pyCalc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C856811922760A7E00FEA8E3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,8 @@
 				C856813922760A8200FEA8E3 /* pyCalcTests */,
 				C856814422760A8200FEA8E3 /* pyCalcUITests */,
 				C856812322760A7E00FEA8E3 /* Products */,
+				271E7813FCBC49CC32FE5D54 /* Pods */,
+				207D39F7069688F446A18240 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +129,7 @@
 				C856812C22760A8200FEA8E3 /* Assets.xcassets */,
 				C856812E22760A8200FEA8E3 /* LaunchScreen.storyboard */,
 				C856813122760A8200FEA8E3 /* Info.plist */,
+				C8C0E72E22773C3A00098418 /* Notes.rtf */,
 			);
 			path = pyCalc;
 			sourceTree = "<group>";
@@ -132,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C856814A22760A8200FEA8E3 /* Build configuration list for PBXNativeTarget "pyCalc" */;
 			buildPhases = (
+				1D3DA0D8F23C4193CBF3C4FE /* [CP] Check Pods Manifest.lock */,
 				C856811E22760A7E00FEA8E3 /* Sources */,
 				C856811F22760A7E00FEA8E3 /* Frameworks */,
 				C856812022760A7E00FEA8E3 /* Resources */,
+				A49A14FCC8B1DF1EF19008F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C0E72F22773C3A00098418 /* Notes.rtf in Resources */,
 				C856813022760A8200FEA8E3 /* LaunchScreen.storyboard in Resources */,
 				C856812D22760A8200FEA8E3 /* Assets.xcassets in Resources */,
 				C856812B22760A7E00FEA8E3 /* Main.storyboard in Resources */,
@@ -250,6 +280,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D3DA0D8F23C4193CBF3C4FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pyCalc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A49A14FCC8B1DF1EF19008F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pyCalc/Pods-pyCalc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pyCalc/Pods-pyCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C856811E22760A7E00FEA8E3 /* Sources */ = {
@@ -430,11 +509,13 @@
 		};
 		C856814B22760A8200FEA8E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC0767C1FA87056A0FE0371 /* Pods-pyCalc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64F6S6MS6N;
 				INFOPLIST_FILE = pyCalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,17 +523,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidanew.pyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C856814C22760A8200FEA8E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EBF9EF6A4D39031A4AB82B5 /* Pods-pyCalc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64F6S6MS6N;
 				INFOPLIST_FILE = pyCalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +543,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidanew.pyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
