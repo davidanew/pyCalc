@@ -226,7 +226,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1V4-k7-Mgu" userLabel="Text View">
-                                        <rect key="frame" x="26" y="466" width="268.5" height="26"/>
+                                        <rect key="frame" x="23.5" y="466" width="273.5" height="26"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corrected Time (seconds) " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mk0-NX-hRd">
                                                 <rect key="frame" x="0.0" y="0.0" width="241.5" height="26"/>
@@ -238,7 +238,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9M-Pl-3RO">
-                                                <rect key="frame" x="241.5" y="2" width="22" height="22"/>
+                                                <rect key="frame" x="246.5" y="2" width="22" height="22"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal">
@@ -248,7 +248,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="D9M-Pl-3RO" firstAttribute="leading" secondItem="mk0-NX-hRd" secondAttribute="trailing" id="1c4-R1-Tru"/>
+                                            <constraint firstItem="D9M-Pl-3RO" firstAttribute="leading" secondItem="mk0-NX-hRd" secondAttribute="trailing" constant="5" id="1c4-R1-Tru"/>
                                             <constraint firstAttribute="bottom" secondItem="mk0-NX-hRd" secondAttribute="bottom" id="4fQ-dg-mdp"/>
                                             <constraint firstItem="D9M-Pl-3RO" firstAttribute="centerY" secondItem="1V4-k7-Mgu" secondAttribute="centerY" id="JQg-3F-LC0"/>
                                             <constraint firstAttribute="trailing" secondItem="D9M-Pl-3RO" secondAttribute="trailing" constant="5" id="Kze-eN-g9N"/>

@@ -1,40 +1,45 @@
 //  Copyright © 2019 David New. All rights reserved.
 
-
-//TODO: change to result type
-//https://www.hackingwithswift.com/articles/126/whats-new-in-swift-5-0
 //TODO: help popup
+//TODO: UI tests - based on real data and at extremes
+//TODO: Comments tomorrow
 
 import UIKit
 import RxSwift
 import RxCocoa
 
-struct ValueAndMessage <T> {
-    let value : T
-    let message : Message
-}
-
-enum Message {
-    case elapsedTimeZero
-    case pyZero
-    case lapsTooHigh
-    case ok
-}
-
 class ViewController: UIViewController {
     let disposeBag = DisposeBag()
     
+    //
+    struct ValueAndMessage <T> {
+        let value : T
+        let message : Message
+    }
+    //
+    enum Message {
+        case elapsedTimeZero
+        case pyZero
+        case lapsTooHigh
+        case ok
+    }
+    
+    //
     @IBOutlet weak var timeHours: UIPickerView!
     @IBOutlet weak var timeMinutes: UIPickerView!
     @IBOutlet weak var timeSeconds: UIPickerView!
+    //
     @IBOutlet weak var laps: UIPickerView!
+    //
     @IBOutlet weak var pyThousands: UIPickerView!
     @IBOutlet weak var pyHundreds: UIPickerView!
     @IBOutlet weak var pyTens: UIPickerView!
     @IBOutlet weak var pyUnits: UIPickerView!
+    //
     @IBOutlet weak var maxLaps: UIPickerView!
-    
+    //
     @IBOutlet weak var correctedTime: UILabel!
+    //
     @IBOutlet weak var outputLabel: UILabel!
     
     override func viewDidLoad() {
@@ -45,27 +50,22 @@ class ViewController: UIViewController {
         let py = calcPy(pyThousands: &pyThousands, pyHundreds: &pyHundreds, pyTens: &pyTens, pyUnits: &pyUnits)
         //Calculate the corrected time
         let correctedTime = calcCorrectedTime(elapsedTimeInSeconds: elapsedTimeInSeconds, lapCorrection: lapCorrection, py: py)
-        
         let correctedTimeString = calcCorrectedTimeString(correctedTime: correctedTime)
         correctedTimeString.bind(to: self.correctedTime.rx.text).disposed(by: disposeBag)
         let outputLabelSting = calcOutputLabelString(correctedTime: correctedTime)
         outputLabelSting.bind(to: self.outputLabel.rx.text).disposed(by: disposeBag)
-
         //For debugging
-        _ = elapsedTimeInSeconds.subscribe(onNext: {print ("elapsedTimeInSeconds \($0)")})
-        _ = lapCorrection.subscribe(onNext: {print ("lapCorrection \($0)")})
-        _ = py.subscribe(onNext: {print ("py \($0)")})
-        _ = correctedTime.subscribe(onNext: {print ("correctedTime \($0)")})
+        _ = elapsedTimeInSeconds.subscribe(onNext: {print ("elapsedTimeInSeconds \($0.value)")})
+        _ = lapCorrection.subscribe(onNext: {print ("lapCorrection \($0.value)")})
+        _ = py.subscribe(onNext: {print ("py \($0.value)")})
+        _ = correctedTime.subscribe(onNext: {print ("correctedTime \($0.value)")})
     }
     
     func calcCorrectedTimeString(correctedTime: Observable<ValueAndMessage<Float>> ) -> Observable<String> {
-        //TODO: put formatting here
         return correctedTime.map({$0.message == .ok ? "\($0.value)" : ""} )
     }
     
     func calcOutputLabelString(correctedTime: Observable<ValueAndMessage<Float>> ) -> Observable<String> {
-        //TODO: put formatting here
-        //return correctedTime.map({$0.message == .ok ? "Corrected Time (seconds)" : "\($0.message)"} )
         return correctedTime.map({
             switch $0.message {
             case .ok : return "Corrected Time (seconds)"
@@ -120,7 +120,7 @@ class ViewController: UIViewController {
         let completedLaps = laps.rx.modelSelected(String.self).map{ Int32($0.first ?? "") ?? 1}.startWith(1)
         let maximumLaps = maxLaps.rx.modelSelected(String.self).map{ Int32($0.first ?? "") ?? 1}.startWith(1)
         let lapCorrection = Observable.combineLatest(completedLaps, maximumLaps, resultSelector : {(value1, value2) -> ValueAndMessage<Float>  in
-            return ValueAndMessage<Float>(value: Float(value2/value1) , message: value2 > value1 ? .lapsTooHigh : .ok)
+            return ValueAndMessage<Float>(value: Float(value2/value1) , message: value1 > value2 ? .lapsTooHigh : .ok)
         })
         
         return lapCorrection
@@ -176,57 +176,9 @@ class ViewController: UIViewController {
             }
             let correctedTimeValue = Float ( elapsedInSeconds.value ) * lapCorrection.value * 1000.00 / Float (py.value)
             let correctedTime2DP = (correctedTimeValue * 100).rounded() / 100
-     //       print ("Corrected time is \(correctedTime2DP)")
             return ValueAndMessage<Float>(value: correctedTime2DP, message: .ok)
         })
         return correctedTime
     }
 }
-
-//From https://github.com/ReactiveX/RxSwift/blob/master/RxExample/RxExample/Examples/UIPickerViewExample/CustomPickerViewAdapterExampleViewController.swift
-
-final class PickerViewViewAdapter
-    : NSObject
-    , UIPickerViewDataSource
-    , UIPickerViewDelegate
-    , RxPickerViewDataSourceType
-    , SectionedViewDataSourceType {
-    typealias Element = [[CustomStringConvertible]]
-    private var items: [[CustomStringConvertible]] = []
-    
-    func model(at indexPath: IndexPath) throws -> Any {
-        return items[indexPath.section][indexPath.row]
-    }
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return items.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return items[component].count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-        return 40
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-        let label = UILabel()
-        label.text = items[component][row].description
-        label.textColor = UIColor.white
-        label.backgroundColor = UIColor.blue
-        
-        label.font = UIFont.systemFont(ofSize: 40)
-        label.textAlignment = .center
-        return label
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, observedEvent: Event<Element>) {
-        Binder(self) { (adapter, items) in
-            adapter.items = items
-            pickerView.reloadAllComponents()
-            }.on(observedEvent)
-    }
-}
-
 
