@@ -40,19 +40,19 @@
                                                 <rect key="frame" x="0.0" y="68" width="217" height="175"/>
                                                 <subviews>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWz-dq-RLu" userLabel="Time Hours Picker">
-                                                        <rect key="frame" x="14.5" y="0.0" width="60" height="175"/>
+                                                        <rect key="frame" x="24.5" y="0.0" width="40" height="175"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="60" id="bhs-pv-V3h"/>
+                                                            <constraint firstAttribute="width" constant="40" id="bhs-pv-V3h"/>
                                                         </constraints>
                                                     </pickerView>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tY-9C-FxS" userLabel="Time Minutes Picker">
-                                                        <rect key="frame" x="78.5" y="0.0" width="60" height="175"/>
+                                                        <rect key="frame" x="68.5" y="0.0" width="60" height="175"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="UZa-gA-yZL"/>
                                                         </constraints>
                                                     </pickerView>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAg-7k-VyL" userLabel="Time Seconds Picker">
-                                                        <rect key="frame" x="142.5" y="0.0" width="60" height="175"/>
+                                                        <rect key="frame" x="132.5" y="0.0" width="60" height="175"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="3WG-gV-iJY"/>
                                                         </constraints>
@@ -67,7 +67,7 @@
                                                     <constraint firstItem="CAg-7k-VyL" firstAttribute="top" secondItem="qNc-ce-2WZ" secondAttribute="top" id="IsJ-rq-vRv"/>
                                                     <constraint firstItem="7tY-9C-FxS" firstAttribute="leading" secondItem="aWz-dq-RLu" secondAttribute="trailing" constant="4" id="NhW-hr-Efb"/>
                                                     <constraint firstItem="7tY-9C-FxS" firstAttribute="top" secondItem="qNc-ce-2WZ" secondAttribute="top" id="WZm-e6-ZEe"/>
-                                                    <constraint firstItem="7tY-9C-FxS" firstAttribute="centerX" secondItem="qNc-ce-2WZ" secondAttribute="centerX" id="cKy-6b-EW3"/>
+                                                    <constraint firstItem="7tY-9C-FxS" firstAttribute="centerX" secondItem="qNc-ce-2WZ" secondAttribute="centerX" constant="-10" id="cKy-6b-EW3"/>
                                                     <constraint firstAttribute="bottom" secondItem="CAg-7k-VyL" secondAttribute="bottom" id="sSn-h9-VVB"/>
                                                     <constraint firstAttribute="height" constant="175" id="woo-ju-f96"/>
                                                 </constraints>
@@ -300,6 +300,7 @@
                         <outlet property="correctedTime" destination="saq-Yv-PDH" id="XMF-TU-Wac"/>
                         <outlet property="laps" destination="WTc-dk-Ubk" id="5BX-um-qdD"/>
                         <outlet property="maxLaps" destination="jhP-jf-iYu" id="pvz-Ff-n5L"/>
+                        <outlet property="outputLabel" destination="mk0-NX-hRd" id="Okf-5g-vYs"/>
                         <outlet property="pyHundreds" destination="V1j-EB-wOK" id="hsm-W4-lXe"/>
                         <outlet property="pyTens" destination="lL2-n9-PSX" id="Leo-jC-4Ux"/>
                         <outlet property="pyThousands" destination="IlI-hC-hA3" id="P2z-Nr-IH5"/>

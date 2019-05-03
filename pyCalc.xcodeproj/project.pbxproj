@@ -51,6 +51,7 @@
 		C856814122760A8200FEA8E3 /* pyCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pyCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C856814522760A8200FEA8E3 /* pyCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pyCalcUITests.swift; sourceTree = "<group>"; };
 		C856814722760A8200FEA8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8822FE4227B0ECD0006AE55 /* RxSwiftPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C8C0E72E22773C3A00098418 /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
 		DF9301FCBFCE10F2C0ADDAEB /* Pods_pyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +124,7 @@
 		C856812422760A7E00FEA8E3 /* pyCalc */ = {
 			isa = PBXGroup;
 			children = (
+				C8822FE4227B0ECD0006AE55 /* RxSwiftPlayground.playground */,
 				C856812522760A7E00FEA8E3 /* AppDelegate.swift */,
 				C856812722760A7E00FEA8E3 /* ViewController.swift */,
 				C856812922760A7E00FEA8E3 /* Main.storyboard */,
