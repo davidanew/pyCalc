@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A99EC29413DDB3E62FA7078 /* Pods_pyCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9301FCBFCE10F2C0ADDAEB /* Pods_pyCalc.framework */; };
-		C84667E1227C9FB000E4ADF6 /* PickerViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84667E0227C9FB000E4ADF6 /* PickerViewAdapter.swift */; };
+		C84667E1227C9FB000E4ADF6 /* PickerViewViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84667E0227C9FB000E4ADF6 /* PickerViewViewAdapter.swift */; };
 		C856812622760A7E00FEA8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856812522760A7E00FEA8E3 /* AppDelegate.swift */; };
 		C856812822760A7E00FEA8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856812722760A7E00FEA8E3 /* ViewController.swift */; };
 		C856812B22760A7E00FEA8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C856812922760A7E00FEA8E3 /* Main.storyboard */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		1AC0767C1FA87056A0FE0371 /* Pods-pyCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pyCalc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pyCalc/Pods-pyCalc.debug.xcconfig"; sourceTree = "<group>"; };
 		8EBF9EF6A4D39031A4AB82B5 /* Pods-pyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pyCalc.release.xcconfig"; path = "Pods/Target Support Files/Pods-pyCalc/Pods-pyCalc.release.xcconfig"; sourceTree = "<group>"; };
-		C84667E0227C9FB000E4ADF6 /* PickerViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewAdapter.swift; sourceTree = "<group>"; };
+		C84667E0227C9FB000E4ADF6 /* PickerViewViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewViewAdapter.swift; sourceTree = "<group>"; };
 		C856812222760A7E00FEA8E3 /* pyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C856812522760A7E00FEA8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C856812722760A7E00FEA8E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 				C856812E22760A8200FEA8E3 /* LaunchScreen.storyboard */,
 				C856813122760A8200FEA8E3 /* Info.plist */,
 				C8C0E72E22773C3A00098418 /* Notes.rtf */,
-				C84667E0227C9FB000E4ADF6 /* PickerViewAdapter.swift */,
+				C84667E0227C9FB000E4ADF6 /* PickerViewViewAdapter.swift */,
 			);
 			path = pyCalc;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 			files = (
 				C856812822760A7E00FEA8E3 /* ViewController.swift in Sources */,
 				C856812622760A7E00FEA8E3 /* AppDelegate.swift in Sources */,
-				C84667E1227C9FB000E4ADF6 /* PickerViewAdapter.swift in Sources */,
+				C84667E1227C9FB000E4ADF6 /* PickerViewViewAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,6 @@
 //  Copyright © 2019 David New. All rights reserved.
 
-//TODO: help popup
-//TODO: UI tests - based on real data and at extremes
+//TODO: After Portfolio UI tests - based on real data and at extremes
 //TODO: Comments tomorrow
 
 import UIKit
@@ -41,6 +40,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var correctedTime: UILabel!
     //
     @IBOutlet weak var outputLabel: UILabel!
+    
+    @IBAction func helpButtonPressed(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Corrected Time Calculator Help", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {alert in}))
+        let bold = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17)]
+        let normal = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17)]
+        let helpTextAs = NSMutableAttributedString()
+        helpTextAs.append ( NSMutableAttributedString(string: "Elapsed Time\n" , attributes:bold) )
+        helpTextAs.append ( NSMutableAttributedString(string: "Time for the competitor to complete all laps\n\n" , attributes:normal) )
+        helpTextAs.append ( NSMutableAttributedString(string: "Laps\n" , attributes:bold) )
+        helpTextAs.append ( NSMutableAttributedString(string: "Number of laps this competitor completed\n\n" , attributes:normal) )
+        helpTextAs.append ( NSMutableAttributedString(string: "PY\n" , attributes:bold) )
+        helpTextAs.append ( NSMutableAttributedString(string: "Portsmouth Yardstick\n\n" , attributes:normal) )
+        helpTextAs.append ( NSMutableAttributedString(string: "Laps\n" , attributes:bold) )
+        helpTextAs.append ( NSMutableAttributedString(string: "The maximum number of laps that any competitor completed" , attributes:normal) )
+        alert.setValue(helpTextAs, forKey: "attributedTitle")
+        self.present(alert, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -180,5 +198,8 @@ class ViewController: UIViewController {
         })
         return correctedTime
     }
+    
+    
+
 }
 
