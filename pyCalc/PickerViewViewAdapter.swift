@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 
 //From https://github.com/ReactiveX/RxSwift/blob/master/RxExample/RxExample/Examples/UIPickerViewExample/CustomPickerViewAdapterExampleViewController.swift
+//Needed for customisation of picker view
 
 final class PickerViewViewAdapter
     : NSObject
