@@ -1,7 +1,7 @@
 //  Copyright © 2019 David New. All rights reserved.
 
+//TODO: change PY message to handicap
 //TODO: After Portfolio UI tests - based on real data and at extremes
-//TODO: Comments tomorrow
 
 import UIKit
 import RxSwift
@@ -197,8 +197,5 @@ class ViewController: UIViewController {
         })
         return correctedTime
     }
-    
-    
-
 }
 

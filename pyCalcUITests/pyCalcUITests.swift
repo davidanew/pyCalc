@@ -27,8 +27,26 @@ class pyCalcUITests: XCTestCase {
     }
 
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        //test initial conditions
+        let correctedTime = app.staticTexts["correctedTime"]
+        XCTAssertEqual("", correctedTime.label)
+        let outputLabel = app.staticTexts["outputLabel"]
+        XCTAssertEqual("Please set Elasped Time", outputLabel.label)
+        //XCTAssert(app.pickers["timeHours"].exists)
+        //test error texts
+        let timeHours = app.pickers["timeHours"]
+        timeHours.pickerWheels.element.adjust(toPickerWheelValue: "1")
+        Thread.sleep(forTimeInterval: 1.0)
+        XCTAssertEqual("Please set PY", outputLabel.label)
+        let pyThousands = app.pickers["pyThousands"]
+        pyThousands.pickerWheels.element.adjust(toPickerWheelValue: "1")
+        Thread.sleep(forTimeInterval: 1.0)
+        //XCTAssertEqual("Please set PY", outputLabel.label)
+        let laps = app.pickers["laps"]
+        laps.pickerWheels.element.adjust(toPickerWheelValue: "2")
+        Thread.sleep(forTimeInterval: 1.0)
+        XCTAssertEqual("Please set max laps", outputLabel.label)
     }
-
 }

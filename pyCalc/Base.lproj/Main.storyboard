@@ -41,18 +41,21 @@
                                                 <subviews>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWz-dq-RLu" userLabel="Time Hours Picker">
                                                         <rect key="frame" x="24.5" y="0.0" width="40" height="175"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="timeHours"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="bhs-pv-V3h"/>
                                                         </constraints>
                                                     </pickerView>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tY-9C-FxS" userLabel="Time Minutes Picker">
                                                         <rect key="frame" x="68.5" y="0.0" width="60" height="175"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="timeMinutes"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="UZa-gA-yZL"/>
                                                         </constraints>
                                                     </pickerView>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAg-7k-VyL" userLabel="Time Seconds Picker">
                                                         <rect key="frame" x="132.5" y="0.0" width="60" height="175"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="timeSeconds"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="3WG-gV-iJY"/>
                                                         </constraints>
@@ -86,24 +89,28 @@
                                                 <subviews>
                                                     <pickerView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="IlI-hC-hA3" userLabel="Py Thousands Picker">
                                                         <rect key="frame" x="22.5" y="0.0" width="40" height="175"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="pyThousands"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="u6e-fB-qDP"/>
                                                         </constraints>
                                                     </pickerView>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1j-EB-wOK" userLabel="Py Hundreds Picker">
                                                         <rect key="frame" x="66.5" y="0.0" width="40" height="175"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="pyHundreds"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="jEL-DA-oNJ"/>
                                                         </constraints>
                                                     </pickerView>
                                                     <pickerView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="lL2-n9-PSX" userLabel="Py Tens Picker">
                                                         <rect key="frame" x="110.5" y="0.0" width="40" height="175"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="pyTens"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="M5v-So-9z6"/>
                                                         </constraints>
                                                     </pickerView>
                                                     <pickerView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="ehM-Qv-bdK" userLabel="Py Units Picker">
                                                         <rect key="frame" x="154.5" y="0.0" width="40" height="175"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="pyUnits"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="Tcb-zv-WPS"/>
                                                         </constraints>
@@ -167,6 +174,7 @@
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTc-dk-Ubk" userLabel="Laps Picker">
                                                         <rect key="frame" x="21.5" y="0.0" width="60" height="175"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="laps"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="5Wl-yN-ePD"/>
                                                         </constraints>
@@ -194,6 +202,7 @@
                                                 <subviews>
                                                     <pickerView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhP-jf-iYu" userLabel="Max Laps Picker">
                                                         <rect key="frame" x="21.5" y="0.0" width="60" height="175"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="maxLaps"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="NV0-lQ-6er"/>
                                                         </constraints>
@@ -230,6 +239,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corrected Time (seconds) " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mk0-NX-hRd">
                                                 <rect key="frame" x="0.0" y="0.0" width="241.5" height="26"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="outputLabel"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="26" id="knl-a6-UcH"/>
                                                 </constraints>
@@ -262,6 +272,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1529" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saq-Yv-PDH">
                                         <rect key="frame" x="60" y="512" width="200" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="correctedTime"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="E0C-8b-M7r"/>
                                             <constraint firstAttribute="width" constant="200" id="aog-1h-d0U"/>
