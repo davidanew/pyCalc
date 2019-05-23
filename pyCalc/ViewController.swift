@@ -1,9 +1,11 @@
 //  Copyright © 2019 David New. All rights reserved.
 
-//TODO: Change image
-//TODO: Other devices
 //TODO: App icon
 //TODO: launch image
+//TODO: Description
+
+//Image public domain:
+//https://commons.wikimedia.org/wiki/File:Musto_Skiff.jpg
 
 import UIKit
 import RxSwift

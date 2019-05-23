@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RS-Aero-Downwind-3" translatesAutoresizingMaskIntoConstraints="NO" id="2HS-Y9-XiZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Musto_Skiff" translatesAutoresizingMaskIntoConstraints="NO" id="2HS-Y9-XiZ">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bt9-sT-g6m" userLabel="SE View">
@@ -331,6 +331,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RS-Aero-Downwind-3" width="1920" height="1080"/>
+        <image name="Musto_Skiff" width="700" height="506"/>
     </resources>
 </document>
