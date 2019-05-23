@@ -1,31 +1,13 @@
-//
-//  pyCalcUITests.swift
-//  pyCalcUITests
-//
-//  Created by David New on 28/04/2019.
 //  Copyright © 2019 David New. All rights reserved.
-//
 
 import XCTest
 
 class pyCalcUITests: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-    
 
     //Automatic test
     func testInitAndError() {
@@ -35,16 +17,14 @@ class pyCalcUITests: XCTestCase {
         XCTAssertEqual("", correctedTime.label)
         let outputLabel = app.staticTexts["outputLabel"]
         XCTAssertEqual("Please set Elasped Time", outputLabel.label)
-        //XCTAssert(app.pickers["timeHours"].exists)
         //test error texts
         let timeHours = app.pickers["timeHours"]
         timeHours.pickerWheels.element.adjust(toPickerWheelValue: "1")
         Thread.sleep(forTimeInterval: 1.0)
-        XCTAssertEqual("Please set PY", outputLabel.label)
+        XCTAssertEqual("Please set handicap", outputLabel.label)
         let pyThousands = app.pickers["pyThousands"]
         pyThousands.pickerWheels.element.adjust(toPickerWheelValue: "1")
         Thread.sleep(forTimeInterval: 1.0)
-        //XCTAssertEqual("Please set PY", outputLabel.label)
         let laps = app.pickers["laps"]
         laps.pickerWheels.element.adjust(toPickerWheelValue: "2")
         Thread.sleep(forTimeInterval: 1.0)
@@ -133,7 +113,63 @@ class pyCalcUITests: XCTestCase {
         Thread.sleep(forTimeInterval: 1.0)
         XCTAssertEqual("2933.33", correctedTime.label)
     }
+    
+    func testHelp() {
+        let app = XCUIApplication()
+        app.buttons.firstMatch.tap()
+        Thread.sleep(forTimeInterval: 1.0)
+        app.alerts.element.buttons["OK"].tap()
+        Thread.sleep(forTimeInterval: 1.0)
+    }
+    
+    //Note that this doesn't work well as a memory test
+    func testMemory() {
+        while (true) {
+          //  testHelp()
+            testPopulateFields()
+          //  testCase()
+            
+        }
+    }
+    
+    //auto test
+    func testExtremes() {
+        let app = XCUIApplication()
+        let correctedTime = app.staticTexts["correctedTime"]
+        let outputLabel = app.staticTexts["outputLabel"]
+        //low value
+        setTimePicker(time: TimePickerInput(hours: 0, minutes: 0, seconds: 1))
+        setPyPicker(py: PyPickerInput(thousands: 9, hundreds: 9, tens: 9, units: 9))
+        setLapsPicker(numLaps: 1)
+        setMaxLapsPicker(numLaps: 1)
+        Thread.sleep(forTimeInterval: 1.0)
+        XCTAssertEqual("0.1", correctedTime.label)
+        //div zero
+        setTimePicker(time: TimePickerInput(hours: 1, minutes: 0, seconds: 0))
+        setPyPicker(py: PyPickerInput(thousands: 0, hundreds: 0, tens: 0, units: 0))
+        setLapsPicker(numLaps: 1)
+        setMaxLapsPicker(numLaps: 1)
+        Thread.sleep(forTimeInterval: 1.0)
+        XCTAssertEqual("Please set handicap", outputLabel.label)
+        //high value
+        setTimePicker(time: TimePickerInput(hours: 9, minutes: 59, seconds: 59))
+        setPyPicker(py: PyPickerInput(thousands: 0, hundreds: 0, tens: 0, units: 1))
+        setLapsPicker(numLaps: 1)
+        setMaxLapsPicker(numLaps: 99)
+        Thread.sleep(forTimeInterval: 1.0)
+        //let expectedValue = (9.0 * 60.0 * 60.0 + 59.0 * 60.0 + 59) * (99.0 / 1.0) * (1000.0 / 1)
+        //print ("expected value is \(expectedValue)")
+        //print (correctedTime.label)
+        XCTAssertEqual("3.5639007e+09", correctedTime.label)
+    }
+    
+    func testAuto() {
+        testInitAndError()
+        testHelp() // not auto
+        testPopulateFields() //not auto
+        testCase()
+        testExtremes()
+    }
 }
 
-//Also make sure help system comes up, and can be dismissed
 

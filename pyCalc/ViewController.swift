@@ -1,7 +1,9 @@
 //  Copyright © 2019 David New. All rights reserved.
 
-//TODO: change PY message to handicap
-//TODO: After Portfolio UI tests - based on real data and at extremes
+//TODO: Change image
+//TODO: Other devices
+//TODO: App icon
+//TODO: launch image
 
 import UIKit
 import RxSwift
@@ -71,10 +73,10 @@ class ViewController: UIViewController {
         let outputLabelSting = calcOutputLabelString(correctedTime: correctedTime)
         outputLabelSting.bind(to: self.outputLabel.rx.text).disposed(by: disposeBag)
         //For debugging
-        _ = elapsedTimeInSeconds.subscribe(onNext: {print ("elapsedTimeInSeconds \($0.value)")})
-        _ = lapCorrection.subscribe(onNext: {print ("lapCorrection \($0.value)")})
-        _ = py.subscribe(onNext: {print ("py \($0.value)")})
-        _ = correctedTime.subscribe(onNext: {print ("correctedTime \($0.value)")})
+        //_ = elapsedTimeInSeconds.subscribe(onNext: {print ("elapsedTimeInSeconds \($0.value)")})
+        //_ = lapCorrection.subscribe(onNext: {print ("lapCorrection \($0.value)")})
+        //_ = py.subscribe(onNext: {print ("py \($0.value)")})
+        //_ = correctedTime.subscribe(onNext: {print ("correctedTime \($0.value)")})
     }
     
     func calcCorrectedTimeString(correctedTime: Observable<ValueAndMessage<Float>> ) -> Observable<String> {
@@ -87,7 +89,7 @@ class ViewController: UIViewController {
             switch $0.message {
             case .ok : return "Corrected Time (seconds)"
             case .elapsedTimeZero :return "Please set Elasped Time"
-            case .pyZero : return "Please set PY"
+            case .pyZero : return "Please set handicap"
             case .lapsTooHigh : return "Please set max laps"
             }
         })
