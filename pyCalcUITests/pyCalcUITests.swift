@@ -14,7 +14,9 @@ class pyCalcUITests: XCTestCase {
         let app = XCUIApplication()
         //test initial conditions
         let correctedTime = app.staticTexts["correctedTime"]
-        XCTAssertEqual("", correctedTime.label)
+        //XCTAssertEqual("", correctedTime.label)
+        XCTAssertFalse(correctedTime.exists)
+        //print(correctedTime.exists
         let outputLabel = app.staticTexts["outputLabel"]
         XCTAssertEqual("Please set Elasped Time", outputLabel.label)
         //test error texts
