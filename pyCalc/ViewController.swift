@@ -1,7 +1,6 @@
 //  Copyright © 2019 David New. All rights reserved.
 
-//TODO: App icon
-//TODO: launch image
+//start upload
 //TODO: Description
 
 //Image public domain:
