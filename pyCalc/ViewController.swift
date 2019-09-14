@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         helpTextAs.append ( NSMutableAttributedString(string: "Number of laps this competitor completed\n\n" , attributes:normal) )
         helpTextAs.append ( NSMutableAttributedString(string: "PY\n" , attributes:bold) )
         helpTextAs.append ( NSMutableAttributedString(string: "Portsmouth Yardstick\n\n" , attributes:normal) )
-        helpTextAs.append ( NSMutableAttributedString(string: "Laps\n" , attributes:bold) )
+        helpTextAs.append ( NSMutableAttributedString(string: "Max Laps\n" , attributes:bold) )
         helpTextAs.append ( NSMutableAttributedString(string: "The maximum number of laps that any competitor completed" , attributes:normal) )
         alert.setValue(helpTextAs, forKey: "attributedTitle")
         self.present(alert, animated: true)
