@@ -108,12 +108,12 @@ class pyCalcUITests: XCTestCase {
         Thread.sleep(forTimeInterval: 1.0)
         XCTAssertEqual("3288.44", correctedTime.label)
         //British Moth 56.28 4/5 2933
-        setTimePicker(time: TimePickerInput(hours: 0, minutes: 56, seconds: 28))
+        setTimePicker(time: TimePickerInput(hours: 0, minutes: 56, seconds: 28)) //3388
         setPyPicker(py: PyPickerInput(thousands: 1, hundreds: 1, tens: 5, units: 5))
         setLapsPicker(numLaps: 4)
         setMaxLapsPicker(numLaps: 5)
         Thread.sleep(forTimeInterval: 1.0)
-        XCTAssertEqual("2933.33", correctedTime.label)
+        XCTAssertEqual("3666.67", correctedTime.label)
     }
     
     func testHelp() {

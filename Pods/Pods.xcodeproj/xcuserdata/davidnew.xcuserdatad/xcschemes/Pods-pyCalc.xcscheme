@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1030"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9B75A9D1B67EE99ACEE5AEC8737C10C3"
+               BlueprintIdentifier = "472132A7004EC15455456995454A8F67"
                BuildableName = "Pods_pyCalc.framework"
                BlueprintName = "Pods-pyCalc"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9B75A9D1B67EE99ACEE5AEC8737C10C3"
+            BlueprintIdentifier = "472132A7004EC15455456995454A8F67"
             BuildableName = "Pods_pyCalc.framework"
             BlueprintName = "Pods-pyCalc"
             ReferencedContainer = "container:Pods.xcodeproj">

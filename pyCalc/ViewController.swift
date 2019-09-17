@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         helpTextAs.append ( NSMutableAttributedString(string: "Laps\n" , attributes:bold) )
         helpTextAs.append ( NSMutableAttributedString(string: "Number of laps this competitor completed\n\n" , attributes:normal) )
         helpTextAs.append ( NSMutableAttributedString(string: "PY\n" , attributes:bold) )
-        helpTextAs.append ( NSMutableAttributedString(string: "Portsmouth Yardstick\n\n" , attributes:normal) )
+        helpTextAs.append ( NSMutableAttributedString(string: "Portsmouth Yardstick (handicap)\n\n" , attributes:normal) )
         helpTextAs.append ( NSMutableAttributedString(string: "Max Laps\n" , attributes:bold) )
         helpTextAs.append ( NSMutableAttributedString(string: "The maximum number of laps that any competitor completed" , attributes:normal) )
         alert.setValue(helpTextAs, forKey: "attributedTitle")
@@ -136,8 +136,8 @@ class ViewController: UIViewController {
             .bind(to: maxLaps.rx.items(adapter: PickerViewViewAdapter()))
             .disposed(by: disposeBag)
         //Calculate lap correction factor. Return it and message indicating validity
-        let completedLaps = laps.rx.modelSelected(String.self).map{ Int32($0.first ?? "") ?? 1}.startWith(1)
-        let maximumLaps = maxLaps.rx.modelSelected(String.self).map{ Int32($0.first ?? "") ?? 1}.startWith(1)
+        let completedLaps = laps.rx.modelSelected(String.self).map{ Float($0.first ?? "") ?? 1}.startWith(1)
+        let maximumLaps = maxLaps.rx.modelSelected(String.self).map{ Float($0.first ?? "") ?? 1}.startWith(1)
         let lapCorrection = Observable.combineLatest(completedLaps, maximumLaps, resultSelector : {(value1, value2) -> ValueAndMessage<Float>  in
             return ValueAndMessage<Float>(value: Float(value2/value1) , message: value1 > value2 ? .lapsTooHigh : .ok)
         })
