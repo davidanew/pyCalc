@@ -165,6 +165,35 @@ class pyCalcUITests: XCTestCase {
         XCTAssertEqual("3.5639007e+09", correctedTime.label)
     }
     
+    func testRandom(){
+        let app = XCUIApplication()
+        let correctedTime = app.staticTexts["correctedTime"]
+        //let outputLabel = app.staticTexts["outputLabel"]
+        let timePickerHours : Int = Int.random(in: 0 ..< 10)
+        let timePickerMins : Int = Int.random(in: 0 ..< 60)
+        let timePickerSecs : Int = Int.random(in: 0 ..< 60)
+        let timeInt : Int = timePickerHours * 60 * 60 + timePickerMins * 60 + timePickerSecs
+        let timeFloat : Float = Float(timeInt)
+        setTimePicker(time: TimePickerInput(hours: timePickerHours, minutes: timePickerMins, seconds: timePickerSecs))
+        let pyPickerThousands : Int = Int.random(in: 0 ..< 10)
+        let pyPickerHundreds : Int = Int.random(in: 0 ..< 10)
+        let pyPickerTens : Int = Int.random(in: 0 ..< 10)
+        let pyPickerUnits : Int = Int.random(in: 0 ..< 10)
+        let pyInt : Int = pyPickerThousands * 1000 + pyPickerHundreds * 100 + pyPickerTens * 10 + pyPickerUnits;
+        let pyFloat : Float = Float(pyInt)
+        setPyPicker(py: PyPickerInput(thousands: pyPickerThousands, hundreds: pyPickerHundreds, tens: pyPickerTens, units: pyPickerUnits))
+        let maxLapsInt : Int = Int.random(in: 0 ..< 100)
+        let maxLapsFloat : Float = Float(maxLapsInt)
+        setMaxLapsPicker(numLaps: maxLapsInt)
+        let lapsInt : Int = Int.random(in: 0 ..< maxLapsInt)
+        let lapsFloat : Float = Float(lapsInt)
+        setLapsPicker(numLaps: lapsInt)
+        let correctedTimeFloat = (1000.0 * timeFloat * maxLapsFloat) / (pyFloat * lapsFloat)
+        print("Expect corrected time of \(correctedTimeFloat)")
+        print("Got expected time of \(correctedTime.label)")
+        Thread.sleep(forTimeInterval: 10.0)
+    }
+    
     func testAuto() {
         testInitAndError()
         testHelp() // not auto
