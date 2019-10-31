@@ -1,8 +1,9 @@
 //  Copyright © 2019 David New. All rights reserved.
 
-//start upload
-//TODO: Description
-
+/*
+iOS icon idea, blue with sun for gradient. Py in new font like sails. Also sort out launch screen
+*/
+ 
 //Image public domain:
 //https://commons.wikimedia.org/wiki/File:Musto_Skiff.jpg
 
@@ -90,8 +91,8 @@ class ViewController: UIViewController {
             switch $0.message {
             case .ok : return "Corrected Time (seconds)"
             case .elapsedTimeZero :return "Please set Elasped Time"
-            case .pyZero : return "Please set handicap"
-            case .lapsTooHigh : return "Please set max laps"
+            case .pyZero : return "Please set Handicap"
+            case .lapsTooHigh : return "Please set Max Laps"
             }
         })
     }
